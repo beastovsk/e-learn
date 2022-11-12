@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap");
+@import "../styles/mixins.scss";
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sidebarContainer {
+    width: 30%;
+    @media screen and (max-width: 768px) {
+        width: 100% !important;
+    }
+    border: 1px solid #e4e4e4;
+}
+.ant-space {
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ant-dropdown-menu {
+    border-radius: 25px !important;
+}
+.ant-dropdown-menu-item {
+    @include fluid(padding, 10px, 20px);
+    padding: 20px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: #11142d;
+        background: #fdfdfd;
+    }
+}
