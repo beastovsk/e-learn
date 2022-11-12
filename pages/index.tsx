@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import Sidebar from "../src/components/ui/Sidebar/Sidebar";
+import Content from "../src/components/Content/Content";
+import Sidebar from "../src/components/Sidebar/Sidebar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -9,7 +10,9 @@ export default function Home() {
             <div className="sidebarContainer">
                 <Sidebar />
             </div>
-            <div className="contentContainer"></div>
+            <div className="contentContainer">
+                <Content />
+            </div>
         </div>
     );
 }

@@ -11,13 +11,22 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .sidebarContainer {
-    width: 30%;
+    width: 20%;
     @media screen and (max-width: 768px) {
         width: 100% !important;
     }
     border: 1px solid #e4e4e4;
+}
+.contentContainer {
+    width: 70%;
+    @media screen and (max-width: 768px) {
+        width: 100% !important;
+    }
 }
 .ant-space {
     cursor: pointer;

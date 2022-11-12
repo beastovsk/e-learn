@@ -7,6 +7,7 @@ import favoriteIcon from "../assets/images/sidebar-icons/favorite-icon.svg";
 import settingsIcon from "../assets/images/sidebar-icons/settings-icon.svg";
 import testIcon from "../assets/images/sidebar-icons/test-icon.svg";
 import activityIcon from "../assets/images/sidebar-icons/activity-icon.svg";
+import backgroundSliderImage from "../assets/images/content/slider-background.svg";
 
 interface layoutInitialState {
     sidebarNavigation: {
@@ -20,6 +21,13 @@ interface layoutInitialState {
         lastName: string;
         status: string;
     };
+    sliderList: {
+        id: number;
+        backgroundImage: string;
+        sliderTitle: string;
+        sliderSubtitle: string;
+        sliderButtonText: string;
+    }[];
 }
 
 const initialState: layoutInitialState = {
@@ -72,6 +80,30 @@ const initialState: layoutInitialState = {
         lastName: "Dallas",
         status: "Premium account",
     },
+    sliderList: [
+        {
+            id: 0,
+            backgroundImage: backgroundSliderImage,
+            sliderTitle: "Artificial Intelligence for Marketing",
+            sliderSubtitle:
+                "Learn how artificial intelligence is reshaping the way marketing is done at both large and small organizations.",
+            sliderButtonText: "Learn now",
+        },
+        {
+            id: 1,
+            backgroundImage: backgroundSliderImage,
+            sliderTitle: "string",
+            sliderSubtitle: "string",
+            sliderButtonText: "string",
+        },
+        {
+            id: 2,
+            backgroundImage: backgroundSliderImage,
+            sliderTitle: "string",
+            sliderSubtitle: "string",
+            sliderButtonText: "string",
+        },
+    ],
 };
 
 const layoutSlice = createSlice({

@@ -2,17 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC } from "react";
-import { useAppSelector } from "../../../hooks/hooks";
-
-import profilePhoto from "../../../../assets/images/sidebar-icons/profile-photo.svg";
-import profileArrows from "../../../../assets/images/sidebar-icons/profile-arrows.svg";
+import { useAppSelector } from "../../hooks/hooks";
 
 import react from "react";
 import s from "./Sidebar.module.scss";
 import { DownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
-import ProfileSelect from "../ProfileSelect/ProfileSelect";
+import ProfileSelect from "../ui/ProfileSelect/ProfileSelect";
 
 interface SidebarProps {}
 
