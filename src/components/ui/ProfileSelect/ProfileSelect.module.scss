@@ -1,14 +1,14 @@
 @import "../../../../assets/styles/mixins.scss";
 
-.profileInfo {
-    p {
-        margin: 0;
-        font-weight: 600;
-        color: #11142d;
-        @include fluid(font-size, 12px, 24px);
+.container {
+	p {
+		margin: 0;
+		font-weight: 600;
+		color: #11142d;
+		@include fluid(font-size, 12px, 24px);
 
-        &:last-child {
-            color: #808191;
-        }
-    }
+		&:last-child {
+			color: #808191;
+		}
+	}
 }

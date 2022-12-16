@@ -1,0 +1,62 @@
+@import "../../../../assets/styles/mixins.scss";
+.contentSliderItem {
+	display: flex;
+	padding: 30px;
+
+	@media screen and (max-width: $breakpoint-lg) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.slideImage {
+	display: flex;
+	justify-content: center;
+}
+.backgroundImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	@include fluid(width, 300px, 500px);
+
+	@media screen and (max-width: $breakpoint-lg) {
+		@include fluid(height, 300px, 500px);
+
+		width: 100%;
+	}
+}
+.sliderText {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	align-self: center;
+}
+.title {
+	color: #ffffff;
+	font-weight: 600;
+	@include fluid(font-size, 26px, 36px);
+}
+.subtitle {
+	color: #ffffff;
+	font-weight: 400;
+}
+
+.buttonContainer {
+	display: flex;
+	// width: 50%;
+
+	@media screen and (max-width: $breakpoint-lg) {
+		justify-content: center;
+	}
+}
+.button {
+	@include fluid(margin-top, 15px, 20px);
+
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.250929);
+	border-radius: 15px;
+
+	@media screen and (max-width: $breakpoint-lg) {
+		width: 50%;
+	}
+}

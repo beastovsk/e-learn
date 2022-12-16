@@ -1,21 +1,14 @@
 @import "../../../../assets/styles/mixins.scss";
-.sliderContainer {
-    position: relative;
-}
+
 .sliderNavigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100000000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .sliderCard {
-    background: #2f3ced;
-    border-radius: 24px;
-    max-width: 100%;
-    background-size: cover;
-    z-index: 4;
-    @include fluid(padding-right, 70px, 140px);
-    // @include fluid(padding-top, 20px, 35px);
-    @include fluid(margin-bottom, 40px, 60px);
-    min-height: 500px;
+	@include fluid(margin-bottom, 40px, 60px);
+
+	background: #2f3ced;
+	border-radius: 24px;
+	background-size: cover;
 }

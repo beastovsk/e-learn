@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, EffectCreative, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import ContentSliderItem from "./ContentSliderItem/ContentSliderItem";
+import ContentSliderItem from "../ContentSliderItem/ContentSliderItem";
 import { useAppSelector } from "../../../hooks/hooks";
 
 export const ContentSlider = () => {

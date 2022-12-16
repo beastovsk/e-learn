@@ -1,85 +1,69 @@
 @import "../../../assets/styles/mixins.scss";
 
 .sidebarContaner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
-    @include fluid(margin-bottom, 20px, 30px);
-    @include fluid(margin-right, 20px, 30px);
-    @include fluid(margin-top, 20px, 30px);
+	@include fluid(margin-bottom, 20px, 30px);
+	@include fluid(margin-right, 20px, 30px);
+	@include fluid(margin-top, 20px, 30px);
 
-    // Logo
-    .sidebarLogo {
-        cursor: pointer;
-        font-weight: 700;
-        @include fluid(font-size, 42px, 52px);
-        @include fluid(margin-top, 10px, 20px);
-        @include fluid(margin-bottom, 10px, 20px);
-        @include fluid(margin-right, 30px, 50px);
-        @include fluid(margin-left, 30px, 50px);
-        &:last-of-type:after {
-            content: "." !important;
-            color: #ff7c5d;
-        }
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 95vh;
 
-    // Navigation
-    .sidebarNavigation {
-        .activeNavigationItem {
-            background: #2f3ced;
+	// Logo
+	.sidebarLogo {
+		@include fluid(font-size, 42px, 52px);
+		@include fluid(margin-left, 30px, 50px);
 
-            p {
-                color: #fff !important;
-            }
-        }
-        .navigationItem {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            padding: 15px 20px;
-            @include fluid(margin-bottom, 10px, 15px);
-            @include fluid(padding-left, 15px, 30px);
-            border-radius: 0px 12px 12px 0px;
+		cursor: pointer;
+		font-weight: 700;
 
-            img {
-                @include fluid(margin-right, 10px, 20px);
-            }
-            p {
-                color: #808191;
-                font-weight: 600;
-                margin: 0;
-                @include fluid(font-size, 16px, 24px);
-            }
+		&:last-of-type:after {
+			content: "." !important;
+			color: #ff7c5d;
+		}
+	}
 
-            &:hover {
-                background: #b4b9ff;
+	// Navigation
+	.sidebarNavigation {
+		.activeNavigationItem {
+			background: #2f3ced;
 
-                p {
-                    color: #fff;
-                }
-                transition: 0.5s all;
-            }
-        }
-    }
+			.label {
+				color: rgb(221, 221, 221) !important;
+			}
+		}
+		.navigationItem {
+			@include fluid(margin-bottom, 10px, 15px);
+			@include fluid(padding-left, 15px, 30px);
 
-    // Profile Info
-    .sidebarProfile {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			padding: 15px 20px;
+			border-radius: 0px 12px 12px 0px;
 
-        .profileInfo {
-            p {
-                margin: 0;
-                font-weight: 600;
-                color: #11142d;
-                @include fluid(font-size, 12px, 24px);
+			.image {
+				@include fluid(margin-right, 10px, 20px);
+				@include fluid(width, 20px, 30px);
+				@include fluid(height, 20px, 30px);
+			}
+			.label {
+				@include fluid(font-size, 16px, 24px);
 
-                &:last-child {
-                    color: #808191;
-                }
-            }
-        }
-    }
+				color: #808191;
+				font-weight: 600;
+				margin: 0;
+			}
+
+			&:hover {
+				background: #b4b9ff;
+
+				p {
+					color: #fff;
+				}
+				transition: 0.5s all;
+			}
+		}
+	}
 }
