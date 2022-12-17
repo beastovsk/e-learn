@@ -17,7 +17,7 @@ const Sidebar: FC<SidebarProps> = () => {
 	const navigationItems = store.sidebarNavigation;
 
 	const navLink = navigationItems.map(({ id, icon, label, path }) => (
-		<Link href={path}>
+		<Link href={path} key={id}>
 			<div
 				className={
 					router.pathname == path

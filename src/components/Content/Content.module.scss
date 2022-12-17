@@ -1,25 +1,26 @@
-@import "../../../assets/styles/mixins.scss";
+@import "../../assets/styles/mixins.scss";
 
-.contentContainer {
-	display: flex;
-	flex-direction: column;
-	// justify-content: space-around;
-	height: 100vh;
+.container {
 	@include fluid(margin-bottom, 20px, 30px);
 	@include fluid(margin-right, 20px, 30px);
 	@include fluid(margin-top, 20px, 30px);
 	@include fluid(margin-left, 20px, 30px);
 
-	.contentTitle {
-		h2 {
-			color: #11142d;
-			@include fluid(font-size, 24px, 32px);
-			font-weight: 500;
-		}
-		h1 {
-			color: #11142d;
-			@include fluid(font-size, 32px, 48px);
-			font-weight: 700;
-		}
+	// display: flex;
+	// justify-content: space-between;
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title {
+		color: #11142d;
+		@include fluid(font-size, 24px, 32px);
+		font-weight: 500;
+	}
+	.subtitle {
+		color: #11142d;
+		@include fluid(font-size, 32px, 48px);
+		font-weight: 700;
 	}
 }

@@ -1,4 +1,4 @@
-@import "../../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/mixins.scss";
 .contentSliderItem {
 	display: flex;
 	padding: 30px;
@@ -17,10 +17,10 @@
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	@include fluid(width, 300px, 500px);
+	@include fluid(width, 200px, 400px);
 
 	@media screen and (max-width: $breakpoint-lg) {
-		@include fluid(height, 300px, 500px);
+		@include fluid(height, 200px, 400px);
 
 		width: 100%;
 	}
@@ -33,11 +33,14 @@
 	align-self: center;
 }
 .title {
+	@include fluid(font-size, 24px, 32px);
+
 	color: #ffffff;
 	font-weight: 600;
-	@include fluid(font-size, 26px, 36px);
 }
 .subtitle {
+	@include fluid(font-size, 16px, 24px);
+
 	color: #ffffff;
 	font-weight: 400;
 }

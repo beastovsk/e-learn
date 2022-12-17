@@ -1,0 +1,54 @@
+@import "../../../assets/styles/mixins.scss";
+
+.title {
+	@include fluid(font-size, 26px, 32px);
+	@include fluid(margin-bottom, 20px, 40px);
+
+	font-weight: bold;
+}
+.cards {
+	gap: 20px;
+	display: flex;
+	list-style: none;
+
+	padding: 0;
+}
+.item {
+	background: #fff;
+	border-radius: 25px;
+	padding: 20px 30px;
+	box-shadow: -3px 10px 64px -7px rgba(34, 60, 80, 0.1);
+
+	cursor: pointer;
+
+	&:hover {
+		transition: all 0.5s 0s ease;
+		box-shadow: -3px 10px 64px -8px rgba(34, 60, 80, 0.2);
+	}
+}
+.cardTitle {
+	@include fluid(font-size, 18px, 24px);
+
+	font-weight: bold;
+}
+.cardSubtitle {
+	@include fluid(font-size, 16px, 18px);
+	@include fluid(margin-bottom, 20px, 30px);
+
+	width: 60%;
+	color: #808191;
+}
+.cardAmount {
+	color: #808191;
+}
+.cardInfo {
+	display: flex;
+	justify-content: space-between;
+}
+.manipulation {
+	display: flex;
+	align-items: center;
+}
+.favouriteIcon {
+	@include fluid(margin-right, 10px, 20px);
+}
