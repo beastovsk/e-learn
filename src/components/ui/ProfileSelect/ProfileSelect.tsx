@@ -3,8 +3,8 @@ import React, { FC } from "react";
 import s from "./ProfileSelect.module.scss";
 import Image from "next/image";
 
-import profilePhoto from "../../../../assets/images/sidebar-icons/profile-photo.svg";
-import profileArrows from "../../../../assets/images/sidebar-icons/profile-arrows.svg";
+import profilePhoto from "../../../assets/images/sidebar-icons/profile-photo.svg";
+import profileArrows from "../../../assets/images/sidebar-icons/profile-arrows.svg";
 import { useAppSelector } from "../../../hooks/hooks";
 
 interface ProfileSelectProps {}
